@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+* {
+  margin: 0;
+  font-family: Quicksand, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  color: #333;
+}
+
+.navbar {
+  backdrop-filter: blur(4px);
+  margin-bottom: 10px;
+}
+
+.navbar a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  max-width: 300px;
+}
+
+.project_image img {
+  border: 2px solid rgb(69, 69, 69);
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.project-card {
+  align-items: center;
+}
+
+.project_image {
+  margin: 20px;
+  box-shadow: 10px 10px 5px rgba(10, 10, 10, 0.4);
+}
