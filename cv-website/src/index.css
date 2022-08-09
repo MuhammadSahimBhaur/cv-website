@@ -42,6 +42,7 @@
 
 .project-card {
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .project_image {
@@ -52,4 +53,7 @@
 .hello {
   padding-left: 50px;
   padding-top: 150px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
 }
