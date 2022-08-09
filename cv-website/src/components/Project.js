@@ -6,15 +6,22 @@ import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 
 
+
 const Project = ({ data }) => {
 
-    const { Title, image, Description } = data
+    const { Title, image, Description, id } = data
 
 
 
     return (
 
-        <div className="project-container" >
+        <div className="project-container" data-aos="fade-up"
+            data-aos-offset={ 500 - (id * 175) }
+            data-aos-delay="20"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-once="true" >
 
             <Card row className="project-card" component="li" sx={ { minWidth: 600, bgcolor: "rgb(231, 231, 231)", marginY: 1 } }>
 
@@ -60,6 +67,7 @@ const Project = ({ data }) => {
             </Card>
         </div >
     );
+
 }
 
 export default Project;

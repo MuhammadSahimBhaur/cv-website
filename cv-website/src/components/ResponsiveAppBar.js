@@ -27,7 +27,7 @@ const ResponsiveAppBar = () => {
     };
 
     return (
-        <AppBar position="sticky" className='navbar' sx={ { bgcolor: "rgba(221, 221, 221, 0.627)" } }>
+        <AppBar position="fixed" className='navbar' sx={ { bgcolor: "rgba(221, 221, 221, 0)", boxShadow: "0px 0px 0px -1px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 0px 0px 0px rgb(0 0 0 / 12%)" } }>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography
@@ -45,7 +45,7 @@ const ResponsiveAppBar = () => {
                             textDecoration: 'none',
                         } }
                     >
-                        LOGO
+                        Sahim Bhaur
                     </Typography>
 
                     <Box sx={ { flexGrow: 1, display: { xs: 'flex', md: 'none' } } }>
@@ -79,7 +79,7 @@ const ResponsiveAppBar = () => {
                         >
                             { pages.map((page) => (
                                 <MenuItem key={ page } onClick={ handleCloseNavMenu }>
-                                    <Typography textAlign="center">{ page }</Typography>
+                                    <Typography textAlign="center" sx={ { color: "#90a4ae" } }>{ page }</Typography>
                                 </MenuItem>
                             )) }
                         </Menu>
@@ -108,45 +108,15 @@ const ResponsiveAppBar = () => {
                             <Button
                                 key={ page }
                                 onClick={ handleCloseNavMenu }
-                                sx={ { my: 2, color: 'white', display: 'block' } }
+                                sx={ { my: 2, color: 'black', display: 'block' } }
                             >
                                 { page }
                             </Button>
                         )) }
                     </Box>
-
-                    {/* <Box sx={ { flexGrow: 0 } }>
-                        <Tooltip title="Open settings">
-                            <IconButton onClick={ handleOpenUserMenu } sx={ { p: 0 } }>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                            </IconButton>
-                        </Tooltip>
-                        <Menu
-                            sx={ { mt: '45px' } }
-                            id="menu-appbar"
-                            anchorEl={ anchorElUser }
-                            anchorOrigin={ {
-                                vertical: 'top',
-                                horizontal: 'right',
-                            } }
-                            keepMounted
-                            transformOrigin={ {
-                                vertical: 'top',
-                                horizontal: 'right',
-                            } }
-                            open={ Boolean(anchorElUser) }
-                            onClose={ handleCloseUserMenu }
-                        >
-                            { settings.map((setting) => (
-                                <MenuItem key={ setting } onClick={ handleCloseUserMenu }>
-                                    <Typography textAlign="center">{ setting }</Typography>
-                                </MenuItem>
-                            )) }
-                        </Menu> 
-                    </Box>*/}
                 </Toolbar>
             </Container>
-        </AppBar>
+        </AppBar >
     );
 };
 export default ResponsiveAppBar;
