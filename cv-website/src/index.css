@@ -43,6 +43,9 @@
 .project-card {
   align-items: center;
   justify-content: space-evenly;
+  display: flex;
+  flex-shrink: 1;
+  width: 400;
 }
 
 .project_image {
@@ -56,4 +59,19 @@
   padding-bottom: 50px;
   display: flex;
   flex-direction: row;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.projects {
+  padding: 200px 20px 50px 10px;
+}
+
+.skeleton {
+  padding-top: -200px;
+  width: 100%;
 }

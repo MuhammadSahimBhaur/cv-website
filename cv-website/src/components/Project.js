@@ -7,6 +7,7 @@ import Typography from '@mui/joy/Typography';
 
 
 
+
 const Project = ({ data }) => {
 
     const { Title, image, Description, id } = data
@@ -16,14 +17,14 @@ const Project = ({ data }) => {
     return (
 
         <div className="project-container" data-aos="fade-up"
-            data-aos-offset={ 500 - (id * 175) }
+            data-aos-offset={ 430 - (id * 175) }
             data-aos-delay="20"
             data-aos-duration="500"
             data-aos-easing="ease-in-out"
             data-aos-anchor-placement="bottom-bottom"
             data-aos-once="true" >
 
-            <Card row className="project-card" component="li" sx={ { minWidth: 1200, bgcolor: "rgb(255, 255, 255)", marginY: 3, boxShadow: "0px 0px 0px -1px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 0px 0px 0px rgb(0 0 0 / 12%)" } }>
+            <Card row className="project-card" component="li" sx={ { bgcolor: "rgb(255, 255, 255)", marginY: 3, boxShadow: "0px 0px 0px -1px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 0px 0px 0px rgb(0 0 0 / 12%)" } }>
 
                 { id % 2 === 1 ? <>
                     <div className="project-description">

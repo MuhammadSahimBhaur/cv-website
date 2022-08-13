@@ -2,6 +2,12 @@ import Project from "./Project";
 import React from 'react';
 import useFetch from "../hooks/useFetch";
 
+import Skeleton from '@mui/material/Skeleton';
+import Stack from '@mui/material/Stack';
+
+
+
+
 
 
 const Projects = () => {
@@ -14,10 +20,23 @@ const Projects = () => {
     if (projects)
         console.log(data[0])
 
-    return (<div>
-        { projects && projects.map((project) => {
-            return <div className="projects" key={ project.id }><Project data={ project } /></div>
-        }) }
+    return (<div className="projects">
+        { projects ? projects.map((project) => {
+            return <div key={ project.id }><Project data={ project } /></div>
+        }) :
+            <div className="skeleton">
+                <Stack spacing={ 1 }>
+                    <div >
+                        <Skeleton animation="wave" variant="rounded" width={ 700 } height={ 100 } />
+                        <Skeleton animation="wave" variant="text" sx={ { fontSize: '2rem' } } />
+                        <Skeleton animation="wave" variant="text" sx={ { fontSize: '2rem' } } />
+                        <Skeleton animation="wave" variant="text" sx={ { fontSize: '2rem' } } />
+                    </div>
+
+                </Stack>
+            </div>
+
+        }
     </div>
     );
 }
