@@ -1,11 +1,10 @@
 import * as React from 'react';
+import { useCallback } from 'react';
 import Box from '@mui/joy/Box';
 import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
-
-
 
 
 const Project = ({ data }) => {
@@ -65,11 +64,10 @@ const Project = ({ data }) => {
                         component="ul"
                         sx={ { display: 'flex', gap: 2, flexWrap: 'wrap', p: 0, m: 0, marginX: 2, marginY: 2 } }
                     >
-                        <Card component="li" sx={ { minWidth: 300, flexGrow: 1 } }>
+                        <Card component="li" sx={ { minWidth: 300, flexGrow: 1 } } onClick="{handleOnClick}">
                             <CardCover>
                                 <img
                                     src={ image }
-                                    // srcSet="https://images.unsplash.com/photo-1502657877623-f66bf489d236?auto=format&fit=crop&w=800&dpr=2 2x"
                                     alt=""
                                 />
                             </CardCover>
@@ -86,16 +84,8 @@ const Project = ({ data }) => {
                         </Card>
 
                     </Box>
-
-
-
-
-
-
-
-                        {/* <div className="project_image"><img src={ image } alt="coming soon" /></div> */ }
                         <div className="project-description">
-                            <h2>{ Title }</h2>
+                            <h2>{ Title } </h2>
                             <p className="description">{ Description }</p>
                         </div>
                     </>

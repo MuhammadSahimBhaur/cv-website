@@ -4,6 +4,7 @@ import { CssVarsProvider } from '@mui/joy/styles';
 import ResponsiveAppBar from './components/ResponsiveAppBar'
 import Hello from './components/Hello.js';
 import useWindowDimensions from './hooks/useWindowDimensions.js';
+import { BrowserRouter } from "react-router-dom";
 
 
 
@@ -16,15 +17,18 @@ const App = () => {
   console.log(windowDimensions.width, windowDimensions.height)
 
   return (
-    <div className="App">
-      <CssVarsProvider />
-      <ResponsiveAppBar></ResponsiveAppBar>
+    <BrowserRouter>
+      <div className="App">
+        <CssVarsProvider />
+        <ResponsiveAppBar></ResponsiveAppBar>
 
-      <div className="two-columns">
-        <Hello />
-        <Projects />
+        <div className="two-columns">
+          <Hello />
+          <Projects />
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
+
   );
 }
 
