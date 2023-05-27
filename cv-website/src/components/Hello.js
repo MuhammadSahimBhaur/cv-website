@@ -12,28 +12,8 @@ const Hello = () => {
           </h2>
         </div>
 
-        <h1
-          data-aos="fade-up"
-          data-aos-offset="620"
-          data-aos-delay="10"
-          data-aos-duration="300"
-          data-aos-easing="ease-in-out"
-          // data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          My name is Sahim Bhaur.
-        </h1>
-        <h1
-          data-aos="fade-up"
-          data-aos-offset="630"
-          data-aos-delay="10"
-          data-aos-duration="300"
-          data-aos-easing="ease-in-out"
-          // data-aos-mirror="true"
-          data-aos-once="true"
-        >
-          I'm a software engineer.
-        </h1>
+        <h1>My name is Sahim Bhaur.</h1>
+        <h1>I'm a software engineer.</h1>
       </div>
     </div>
   );
