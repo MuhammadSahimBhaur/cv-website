@@ -5,14 +5,7 @@ const Hello = () => {
   return (
     <div className="left-side-box">
       <div>
-        <div
-          data-aos="fade-up"
-          data-aos-offset="20"
-          data-aos-delay="20"
-          data-aos-duration="500"
-          data-aos-easing="ease-in-out"
-          data-aos-once="true"
-        >
+        <div>
           <h1>Hello!</h1>
           <h2 style={{ display: "flex", alignItems: "center" }}>
             Keep scrolling down for more. <ArrowDownwardIcon />
