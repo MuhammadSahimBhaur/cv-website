@@ -14,8 +14,6 @@ const Projects = () => {
 
   const projects = data.data;
 
-  // if (projects)
-  //     console.log(data[0])
   let firstProject;
   if (projects) {
     firstProject = projects.shift();
@@ -42,35 +40,6 @@ const Projects = () => {
             </FadeIn>
           );
         })}
-      {/* : (
-        <div className="skeleton">
-          <Stack spacing={1}>
-            <div>
-              <Skeleton
-                animation="wave"
-                variant="rounded"
-                width={700}
-                height={100}
-              />
-              <Skeleton
-                animation="wave"
-                variant="text"
-                sx={{ fontSize: "2rem" }}
-              />
-              <Skeleton
-                animation="wave"
-                variant="text"
-                sx={{ fontSize: "2rem" }}
-              />
-              <Skeleton
-                animation="wave"
-                variant="text"
-                sx={{ fontSize: "2rem" }}
-              />
-            </div>
-          </Stack>
-        </div>
-      )} */}
     </div>
   );
 };
