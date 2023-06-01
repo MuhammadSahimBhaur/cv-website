@@ -7,8 +7,9 @@ export const FadeIn = ({ trigger, children }) => {
     opacity: 0,
     y: "100%",
     config: {
-      friction: 10,
-      tension: 25,
+      mass: 1,
+      friction: 14,
+      tension: 50,
     },
   }));
 
