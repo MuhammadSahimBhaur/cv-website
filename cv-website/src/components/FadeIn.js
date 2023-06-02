@@ -3,7 +3,7 @@ import { animated, useSpring, useScroll } from "@react-spring/web";
 export const FadeIn = ({ trigger, children }) => {
   // Creating an animated div that
   // has 0 opacity and maximum y allowed in the div
-  const [textStyles, textApi] = useSpring(() => ({
+  const [smoothStyles, textApi] = useSpring(() => ({
     opacity: 0,
     y: "100%",
     config: {
@@ -27,5 +27,5 @@ export const FadeIn = ({ trigger, children }) => {
     },
   });
 
-  return <animated.div style={textStyles}>{children}</animated.div>;
+  return <animated.div style={smoothStyles}>{children}</animated.div>;
 };
