@@ -15,8 +15,7 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <CssVarsProvider />
-        <ResponsiveAppBar></ResponsiveAppBar>
-
+        <ResponsiveAppBar />
         <div className="two-columns">
           <Hero />
           <Projects />
