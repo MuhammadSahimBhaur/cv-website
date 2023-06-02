@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 
+body::-webkit-scrollbar {
+  width: 0.5rem; /* Adjust the width as needed */
+  background-color: transparent;
+}
+
 * {
   margin: 0;
   font-family: Quicksand, system-ui, -apple-system, BlinkMacSystemFont,
