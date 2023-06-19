@@ -20,7 +20,7 @@ export const FadeIn = ({ trigger, children }) => {
   useScroll({
     onChange: (props) => {
       let { scrollYProgress } = props.value;
-      console.log("scrollYProgress from FadeIn", scrollYProgress);
+      // console.log("scrollYProgress from FadeIn", scrollYProgress);
       if (scrollYProgress > trigger) {
         textApi.start({ opacity: 1, y: "0%" });
       }

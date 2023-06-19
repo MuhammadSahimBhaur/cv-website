@@ -3,7 +3,6 @@ import React from "react";
 import { CssVarsProvider } from "@mui/joy/styles";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import Hero from "./components/Hero.js";
-import { useScroll } from "@react-spring/web";
 
 // import useWindowDimensions from "./hooks/useWindowDimensions.js";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
