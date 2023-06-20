@@ -2,10 +2,11 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
+app.use(express.static("public"));
 app.use(cors());
 
 app.get("/", (req, res) => {
-  console.log(req);
+  res.sendFile(__dirname + "/public/index.html");
 });
 
 app.get("/projects", (req, res) => {
