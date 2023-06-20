@@ -10,9 +10,11 @@ const Projects = () => {
   let intial_trigger = 0.005;
   const trigger_interval = 0.1;
 
-  let data = useFetch("http://localhost:3004/projects");
+  // let data = useFetch("http://localhost:3004/projects");
 
-  const projects = data.data;
+  let data = useFetch("http://localhost:3005/projects");
+
+  const projects = data?.data?.projects;
 
   let firstProject;
   if (projects) {
