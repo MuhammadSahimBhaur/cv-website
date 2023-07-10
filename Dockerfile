@@ -16,7 +16,7 @@ RUN npm install
 # Copy local code to the container image
 COPY . ./
 
-RUN cd ./cv-website && npm install && npm run build
+# RUN cd ./cv-website && npm install && npm run build
 
 # Run the web service on container startup
 CMD [ "npm", "start" ]
