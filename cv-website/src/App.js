@@ -4,13 +4,13 @@ import { CssVarsProvider } from "@mui/joy/styles";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import Hero from "./components/Hero.js";
 
-// import useWindowDimensions from "./hooks/useWindowDimensions.js";
+import useWindowDimensions from "./hooks/useWindowDimensions.js";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const App = () => {
-  // const windowDimensions = useWindowDimensions();
+  const windowDimensions = useWindowDimensions();
 
-  // console.log(windowDimensions.width, windowDimensions.height);
+  console.log(windowDimensions.width, windowDimensions.height);
 
   return (
     <div className="App">

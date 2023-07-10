@@ -25,7 +25,7 @@ const Projects = () => {
     <div className="projects">
       {projects ? (
         <FadeIn trigger={intial_trigger}>
-          <div key={firstProject.id}>
+          <div key={firstProject?.id}>
             <Project data={firstProject} />
           </div>
         </FadeIn>
@@ -36,7 +36,7 @@ const Projects = () => {
         projects.map((project) => {
           return (
             <FadeIn trigger={(intial_trigger += trigger_interval)}>
-              <div key={project.id}>
+              <div key={project?.id}>
                 <Project data={project} />
               </div>
             </FadeIn>

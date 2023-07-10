@@ -28,11 +28,11 @@ const Hero = () => {
           <h1>I'm a software engineer.</h1>
         </FadeIn>
         <div style={{ marginTop: "100px" }}></div>
-        <FadeIn trigger={(intial_trigger += trigger_interval)}>
+        {/* <FadeIn trigger={(intial_trigger += trigger_interval)}>
           <h1>
-            You can contact me <a href="www.google.com">here</a>.
+            You can contact me <a href="sahimbhaur@outlook.com">here</a>.
           </h1>
-        </FadeIn>
+        </FadeIn> */}
         <FadeIn trigger={(intial_trigger += trigger_interval * 1.5)}>
           <h1>Feel free to go through my projects!</h1>
         </FadeIn>
