@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import "typeface-roboto";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { ProjectPage } from "./components/ProjectPage";
 
 const router = createBrowserRouter([
   {
@@ -11,8 +12,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/hi",
-    element: <div>hi!</div>,
+    path: "/project/:project_name",
+    element: <ProjectPage />,
   },
 ]);
 

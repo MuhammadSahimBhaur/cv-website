@@ -1,13 +1,12 @@
 import * as React from "react";
+import { useSpring, animated } from "@react-spring/web";
 
 import Card from "@mui/joy/Card";
 import { ProjectCardFlipper } from "./ProjectCardFlipper";
 
 const Project = ({ data }) => {
-  const { id } = data;
-
   return (
-    <div className="project-container">
+    <animated.div className="project-container">
       <Card
         row
         className="project-card"
@@ -19,9 +18,9 @@ const Project = ({ data }) => {
             "0px 0px 0px -1px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 0px 0px 0px rgb(0 0 0 / 12%)",
         }}
       >
-        <ProjectCardFlipper data={data} flipped={id % 2 === 1} />
+        <ProjectCardFlipper data={data} flipped={data?.id % 2 === 1} />
       </Card>
-    </div>
+    </animated.div>
   );
 };
 
