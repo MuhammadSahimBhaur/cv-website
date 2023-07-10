@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
   justify-content: space-evenly;
   display: flex;
   flex-shrink: 1;
-  width: 400;
+  /* width: 400; */
 }
 
 .project_image {
@@ -60,7 +60,7 @@ body::-webkit-scrollbar {
 
 .left-side-box {
   padding-left: 50px;
-  padding-top: 350px;
+  padding-top: 250px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: row;
@@ -77,11 +77,52 @@ body::-webkit-scrollbar {
 }
 
 .projects {
-  padding: 300px 60px 50px 50%;
+  padding: 100px 60px 50px 50%;
   margin-bottom: 200px;
 }
 
 .skeleton {
   padding-top: -100px;
   width: 100%;
+}
+
+.project-page-desc{
+  margin-right: 100px;
+}
+
+.project-page-title {
+  margin-right: 200px;
+}
+
+.ProjectPage {
+background-image: url("../public/Background.png");
+
+background-size: cover;
+height: 100vh;
+margin: none;
+}
+
+body{
+  height: 100vh;
+}
+
+.ProjectPageColumns {
+  display: flex;
+  flex-direction: row;
+  justify-content: none !important;
+  padding-top: 150px;
+}
+
+.ProjectColumn1{
+  margin-left: 2.5vw;
+}
+
+.ProjectColumn2{
+  margin-left: 9vw;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.project-wrapper {
+  text-decoration:none
 }
