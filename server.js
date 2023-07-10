@@ -32,7 +32,7 @@ app.get("/projects", (req, res) => {
           </p>
           <br>
           <p>
-            Through our efforts we have developed a functional online retail store that provides ample learning opportunities. While the platform may lack finesse, it has served as a valuable learning experience for our team. We are excited to collaborate with the clients of KhudKaar in order to contribute to the betterment of the community.
+            Through our efforts, we have developed a functional online retail store that provides ample learning opportunities. While the platform may lack finesse, it has served as a valuable learning experience for our team. We are excited to collaborate with the clients of KhudKaar in order to contribute to the betterment of the community.
           </p>
         </div>
         `,
