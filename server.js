@@ -2,11 +2,8 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
+app.use(express.static("public"));
 app.use(cors());
-
-app.get("/", (req, res) => {
-  console.log(req);
-});
 
 app.get("/projects", (req, res) => {
   res.json({
@@ -16,7 +13,7 @@ app.get("/projects", (req, res) => {
         id: 0,
         image: "gs://cv-website-bucket/khud kaar.jpg",
         Summary:
-          "Empowering unemployed individuals and supporting women and students in selling homemade products, while providing part-time work opportunities through a functional online retail store and freelance portal.",
+          "Empowering unemployed individuals, and supporting women and students in selling homemade products, while providing part-time work opportunities through a functional online retail store and freelance portal.",
         Description: `<div>
           <p>
             Khudkaar.com was not only a project to help us learn Software Engineering fundamentals but also an attempt at helping a social aware student startup to grow even more.
@@ -31,7 +28,7 @@ app.get("/projects", (req, res) => {
           </p>
           <br>
           <p>
-            Through our efforts, we have developed a functional online retail store that provides ample learning opportunities. While the platform may lack finesse, it has served as a valuable learning experience for our team. We are excited to collaborate with the clients of KhudKaar in order to contribute to the betterment of the community.
+            Through our efforts we have developed a functional online retail store that provides ample learning opportunities. While the platform may lack finesse, it has served as a valuable learning experience for our team. We are excited to collaborate with the clients of KhudKaar in order to contribute to the betterment of the community.
           </p>
         </div>
         `,
@@ -72,6 +69,10 @@ app.get("/projects", (req, res) => {
       },
     ],
   });
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
 });
 
 const port = process.env.PORT || 3005;
