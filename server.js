@@ -5,10 +5,6 @@ const cors = require("cors");
 app.use(express.static("public"));
 app.use(cors());
 
-app.get("*", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
-});
-
 app.get("/projects", (req, res) => {
   res.json({
     projects: [
@@ -73,6 +69,10 @@ app.get("/projects", (req, res) => {
       },
     ],
   });
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
 });
 
 const port = process.env.PORT || 3005;
