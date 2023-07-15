@@ -11,7 +11,7 @@ app.get("/projects", (req, res) => {
       {
         Title: "Khudkaar",
         id: 0,
-        image: "gs://cv-website-bucket/khud kaar.jpg",
+        image: "khudkaar.jpg",
         Summary:
           "Empowering unemployed individuals, and supporting women and students in selling homemade products, while providing part-time work opportunities through a functional online retail store and freelance portal.",
         Description: `<div>
