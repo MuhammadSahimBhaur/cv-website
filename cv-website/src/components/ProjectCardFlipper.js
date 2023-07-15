@@ -4,7 +4,7 @@ import Card from "@mui/joy/Card";
 import CardCover from "@mui/joy/CardCover";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
-import { useSpring, animated } from "@react-spring/web";
+// import { useSpring, animated } from "@react-spring/web";
 import { Link } from "react-router-dom";
 
 const ImageBox = ({ image }) => {
@@ -54,9 +54,9 @@ const ProjectCardFlipper = ({
 }) => {
   return (
     <>
-      <animated.a
+      <Link
+        to={`/project/${Title}`}
         className="project-wrapper"
-        href={`/project/${Title}`}
         onClick={() => {}}
         style={{
           display: "flex",
@@ -75,7 +75,7 @@ const ProjectCardFlipper = ({
             <ImageBox image={image}></ImageBox>
           </>
         )}
-      </animated.a>
+      </Link>
     </>
   );
 };
