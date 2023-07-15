@@ -17,7 +17,7 @@ app.get("/projects", (req, res) => {
         id: 0,
         image: "gs://cv-website-bucket/khud kaar.jpg",
         Summary:
-          "Empowering unemployed individuals and supporting women and students in selling homemade products, while providing part-time work opportunities through a functional online retail store and freelance portal.",
+          "Empowering unemployed individuals, and supporting women and students in selling homemade products, while providing part-time work opportunities through a functional online retail store and freelance portal.",
         Description: `<div>
           <p>
             Khudkaar.com was not only a project to help us learn Software Engineering fundamentals but also an attempt at helping a social aware student startup to grow even more.
