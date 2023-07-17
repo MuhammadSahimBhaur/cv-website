@@ -1,6 +1,5 @@
-# Use the official lightweight Node.js 12 image.
 # https://hub.docker.com/_/node
-FROM node:12-slim
+FROM node
 
 # Create and change to the app directory.
 WORKDIR /usr/src/app
@@ -16,7 +15,11 @@ RUN npm install
 # Copy local code to the container image
 COPY . ./
 
-# RUN cd ./cv-website && npm install && npm run build
+RUN cd ./cv-website && npm install && npm run build
+
+# Because the express server serves files from the public dir
+# RUN cd ./cv-website && ls
+RUN cp -r ./cv-website/build/. ../public/
 
 # Run the web service on container startup
 CMD [ "npm", "start" ]
